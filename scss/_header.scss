@@ -1,0 +1,39 @@
+header {
+    background-color: $lightergrey;
+    vertical-align: middle;
+    text-align: center;
+    & h4 {
+        font-size: $textsize_normal;
+    }
+    & h5 {
+        font-size: $textsize_small;
+        font-weight: 200;
+    }
+    & button {
+        background: linear-gradient(347deg, $primary, $secondary);
+        border-radius: 50px;
+        border-style: none;
+        box-shadow: 2px 2px 8px $grey;
+        font-weight: 500;
+        color: white;
+        padding: 1em 1em;
+        margin-bottom: 2em;
+        transition: all 200ms ease;
+        &:active {
+            transform: scale(0.9);
+            box-shadow: 1px 1px 4px $grey;
+        }
+    }
+}
+
+#location_box {
+    height: 64px;
+    background-color: $lightgrey;
+    font-size: $textsize_small;
+    font-weight: 500;
+    line-height: 64px;
+    & svg { /* wtf fontawesome!!! */
+        padding-right: 15px;
+        margin: auto 0px;
+    }
+}

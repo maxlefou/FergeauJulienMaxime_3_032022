@@ -1,0 +1,23 @@
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 64px;
+    text-align: center;
+    box-shadow: 2px 0px 4px black;
+    z-index: 100;
+    background-color: $white;
+}
+
+#logo h1{
+    height: 2em;
+    padding-top: 17px;
+    margin: 0;
+}
+
+#back_button {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    text-decoration: none;
+}
