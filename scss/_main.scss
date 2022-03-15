@@ -9,22 +9,25 @@ main {
     width: auto;
 }
 
-a .fonct {
+a .fonct { /* i heard it has better performances this way... */
     &_button {
         background-color: $lightergrey;
+        position: relative;
         border-radius: 15px;
         box-shadow: 2px 2px 8px $grey;
         width: auto;
         padding: 25px 25px 25px 40px;
         margin-left: 15px;
         margin-bottom: 20px;
-        transition: all 200ms ease;
+        z-index: 1;
         & svg {
             margin: 0px 15px 0 -8px;
             color: $grey;
         }
-        &:active {
-            background-color: $lightprimary;
+        &:hover {
+            & .fonct__bg {
+                opacity: 1;
+            }
         }
     }
     &_number {
@@ -38,13 +41,21 @@ a .fonct {
         margin: -24px -20px -5px -56px;
         z-index: 5;
     }
+    &__bg {
+        @include anims_base(-1);
+        transition: opacity 250ms;
+        opacity: 0;
+        background-color: lighten($primary, 25);
+        box-shadow: 2px 2px 8px $grey;
+        border-radius: 15px;
+    }
 }
 
 #restaurants {
     background-color: $lightergrey;
-    padding: 1em;
     margin: 0;
     width: auto;
+    padding: 1em 1em 3em 1em;
     & h4 {
         margin: 0.75em;
     }
@@ -55,6 +66,7 @@ a .fonct {
     flex-direction: column;
     align-items: stretch;
     width: auto;
+    gap: 20px;
 }
 
 .card {
@@ -84,17 +96,23 @@ a .fonct {
 }
 
 .favorite_icon {
+    position: relative;
     float: right;
-    & .fav_true {
-        display: none;
-        &:hover {
-            display: block;
+    z-index: 10;
+    font-size: 2em;
+    &:hover {
+        & .favorite_icon__liked {
+            transform: scale(1.1);
         }
     }
-    & .fav_false {
-        display: block;
-        &:hover {
-            display: none;
+    &__liked {
+        @include anims_base(11);
+        transform: scale(0);
+        transition: transform 250ms ease;
+        &::after{
+            font: var(--fa-font-solid);
+            content: "\f004";
+            color: $primary;
         }
     }
 }
@@ -107,11 +125,23 @@ a .fonct {
         flex-direction: row-reverse;
     }
     #restaurants {
-        width: 70%;
+        width: 50%;
         margin: 1em;
         border-radius: 15px;
     }
     #fonctionnement {
-        width: 30%;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .card_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 40%;
     }
 }

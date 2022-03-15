@@ -1,0 +1,35 @@
+footer {
+    background-color: $darkgrey;
+    padding: 0.5em 1.2em;
+    margin: 0;
+    color: $white;
+    line-height: 2em;
+}
+
+.list_partenaire_icon::before, 
+.list_propose_icon::before {
+    margin-right: 8px;
+    width: 15px;
+}
+
+ul {
+    & li {
+        list-style: none;
+        margin-left: -2.5em;
+        & a {
+            color: $white !important; /* WHAT THE FUCK */
+            &:hover {
+                color: $lightgrey !important;
+            }
+            & svg {
+                width: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    footer {
+        padding: 0.5em 4em;
+    }
+}

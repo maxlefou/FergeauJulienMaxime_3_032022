@@ -1,0 +1,9 @@
+@mixin anims_base($z-index) {
+    /* Don't forget to put position relative to parent object! */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z-index;
+}
