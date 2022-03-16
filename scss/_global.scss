@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: $black;
 }
 
 a:visited{
@@ -19,4 +20,21 @@ h4, h5, h6 {
     font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 1.5em;
+}
+
+.order_btn {
+    background: linear-gradient(347deg, $primary, $secondary);
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 2px 2px 8px $grey;
+    font-weight: 500;
+    color: white;
+    padding: 1em 1em;
+    margin: 0 auto 2em auto;
+    transition: all 200ms ease;
+    width: 50%;
+    &:active {
+        transform: scale(0.9);
+        box-shadow: 1px 1px 4px $grey;
+    }
 }

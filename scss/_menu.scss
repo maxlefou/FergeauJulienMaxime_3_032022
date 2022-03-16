@@ -1,0 +1,118 @@
+.menu_head_bg {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    z-index: -10;
+    & img {
+        @include responsive_pic(300px);
+    }
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 1em 0 1em;
+    margin: 230px 0 0 0;
+    background-color: $lightergrey;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: 20;
+    & h1 {
+        font-size: 1.5em;
+    }
+}
+
+.menu_section {
+    width: auto;
+    padding-bottom: 2em;
+    & h2 {
+        font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        text-decoration: underline solid $tertiary 5px;
+    }
+}
+
+a .dish {
+    background-color: $white;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px $lightgrey;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+    & h4 {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.25em;
+        margin: 0;
+        transition: width 250ms ease-out;
+        width: 80%;
+    }
+    & p {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 8px 0;
+        transition: width 250ms ease-out;
+        width: 80%;
+    }
+    & .price {
+        font-weight: bold;
+        font-size: 1.2em;
+        float: right;
+        transition: transform 250ms ease-out;
+        transform: translateX(0);
+        height: auto;
+    }
+    &:hover {
+        & .dish__valid {
+            animation: validate_menu_item 250ms normal forwards;
+            &::after {
+                opacity: 1;
+            }
+        }
+        & .price {
+            transform: translateX(-100px);
+        }
+        & p {
+            width: 50%;
+        }
+        & h4 {
+            width: 50%;
+        }
+    }
+    &__valid {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 1;
+        &::after {
+            font: var(--fa-font-solid);
+            content: "\f058";
+            color: $white;
+            opacity: 0;
+            font-size: 2em;
+            position: absolute;
+            top: 30px;
+            left: 35px;
+        }
+    }
+}
+
+@keyframes validate_menu_item {
+    from {
+        font-size: 0;
+        width: 0;
+    }
+    to {
+        font-size: 1em;
+        width: 100px;
+    }
+}

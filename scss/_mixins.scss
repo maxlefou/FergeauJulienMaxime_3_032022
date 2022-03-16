@@ -7,3 +7,10 @@
     left: 0;
     z-index: $z-index;
 }
+
+@mixin responsive_pic($height) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+    object-position: center;
+}

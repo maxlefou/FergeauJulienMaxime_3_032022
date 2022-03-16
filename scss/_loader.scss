@@ -1,0 +1,69 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 200;
+    background-color: $white;
+    text-align: center;
+    vertical-align: middle;
+    animation-name: loader_anim;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    & h1 {
+        font-size: 3em;
+        margin: 40% auto 50px auto;
+        animation-name: loader_anim;
+        animation-duration: 1.2s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+    }
+}
+
+@keyframes loader_anim {
+    99% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-999999px);
+    }
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    animation-name: loader_anim;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $grey transparent $grey transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
