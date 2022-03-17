@@ -38,3 +38,21 @@ h4, h5, h6 {
         box-shadow: 1px 1px 4px $grey;
     }
 }
+
+/* Doesn't work on firefox. There's a code for that in Firefox but it doesn't work on the main bar. Or maybe it's Linux again... */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, $primary, $secondary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+}

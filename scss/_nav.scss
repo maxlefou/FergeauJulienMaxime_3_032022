@@ -2,16 +2,19 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    height: 64px;
+    height: 50px;
+    padding-top: 16px;
     text-align: center;
+    vertical-align: middle;
     box-shadow: 2px 0px 4px black;
     z-index: 100;
     background-color: $white;
 }
 
-#logo h1{
+#logo {
+    font-family: "Shrikhand", 'Times New Roman', Times, serif;
+    font-size: 2em;
     height: 2em;
-    padding-top: 17px;
     margin: 0;
 }
 
