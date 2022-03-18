@@ -26,7 +26,7 @@
 .menu_section {
     width: auto;
     padding-bottom: 2em;
-    animation: slide_from_right 500ms ease forwards;
+    animation: slide_from_right $slidetime ease forwards;
     & h2 {
         font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 200;
@@ -48,36 +48,32 @@ a .dish {
     box-shadow: 2px 2px 8px $lightgrey;
     padding: 1em;
     z-index: 1;
-    animation: slide_from_right 500ms ease forwards;
+    animation: slide_from_right $slidetime ease forwards;
     & h4 {
-        white-space: nowrap; 
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include hide_that_text;
         font-size: 1em;
         margin: 0;
-        transition: width 250ms ease-out;
+        transition: width $enlargetime ease-out;
         width: 80%;
     }
     & p {
-        white-space: nowrap; 
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include hide_that_text;
         font-size: 0.9em;
         margin: 8px 0 0 0;
-        transition: width 250ms ease-out;
+        transition: width $enlargetime ease-out;
         width: 80%;
     }
     & .price {
         font-weight: bold;
         font-size: 1.2em;
         float: right;
-        transition: transform 250ms ease-out;
+        transition: transform $enlargetime ease-out;
         transform: translateX(0);
         height: auto;
     }
     &:hover {
         & .dish__valid {
-            animation: validate_menu_item 250ms ease-out forwards;
+            animation: validate_menu_item $enlargetime ease-out forwards;
             &::before {
                 opacity: 1;
                 left: 25px;

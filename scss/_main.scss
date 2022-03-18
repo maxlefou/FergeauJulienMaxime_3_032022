@@ -9,7 +9,7 @@ main {
     width: auto;
 }
 
-a .fonct { /* i heard it has better performances this way... */
+a .fonct {
     &_button {
         background-color: $lightergrey;
         position: relative;
@@ -48,6 +48,14 @@ a .fonct { /* i heard it has better performances this way... */
         background-color: lighten($primary, 25);
         box-shadow: 2px 2px 8px $grey;
         border-radius: 15px;
+    }
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation-name: slide_from_right;
+            animation-duration: $slidetime;
+            animation-fill-mode: both;
+            animation-delay: 2000ms + $enlargetime * $i;
+        }
     }
 }
 

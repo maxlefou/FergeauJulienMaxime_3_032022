@@ -14,3 +14,9 @@
     object-fit: cover;
     object-position: center;
 }
+
+@mixin hide_that_text {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

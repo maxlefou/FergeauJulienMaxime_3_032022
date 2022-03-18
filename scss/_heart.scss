@@ -15,7 +15,7 @@
     &__liked {
         @include anims_base(11);
         transform: scale(0);
-        transition: transform 250ms ease;
+        transition: transform $enlargetime ease;
         &::after{
             font: var(--fa-font-solid);
             content: "\f004";
