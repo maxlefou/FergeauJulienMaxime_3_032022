@@ -15,4 +15,4 @@ $textsize_normal: 1.5em;
 $textsize_small: 1.25em;
 
 $slidetime: 500ms;
-$enlargetime: $slidetime / 2;
+$enlargetime: calc($slidetime / 2);
