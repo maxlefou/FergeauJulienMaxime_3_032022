@@ -74,8 +74,11 @@ a .dish {
     &:hover {
         & .dish__valid {
             animation: validate_menu_item $enlargetime ease-out forwards;
+            font-size: 2em;
             &::before {
+                transition: all $enlargetime ease-out;
                 opacity: 1;
+                font-size: 2em;
                 left: 25px;
             }
         }
@@ -99,36 +102,16 @@ a .dish {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         z-index: 1;
+        font-size: 2em;
         &::before {
             font: var(--fa-font-solid);
             content: "\f058";
             color: $white;
             opacity: 0;
-            font-size: 2em;
             position: absolute;
             top: 22px;
             left: -35px;
         }
-    }
-}
-
-@keyframes validate_menu_item {
-    from {
-        font-size: 0;
-        width: 0;
-    }
-    to {
-        font-size: 1em;
-        width: 80px;
-    }
-}
-
-@keyframes slide_from_right {
-    0% {
-        transform: translateX(120%);
-    }
-    100% {
-        transform: translateX(0);
     }
 }
 

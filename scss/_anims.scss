@@ -1,0 +1,21 @@
+@keyframes validate_menu_item {
+    from {
+        font-size: 0;
+        width: 0;
+    }
+
+    to {
+        font-size: 1em;
+        width: 80px;
+    }
+}
+
+@keyframes slide_from_right {
+    0% {
+        transform: translateX(2048px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -6,11 +6,11 @@ footer {
     line-height: 2em;
 }
 
-.list_partenaire_icon::before, 
+/*.list_partner_icon::before, 
 .list_propose_icon::before {
     margin-right: 8px;
     width: 15px;
-}
+}*/
 
 ul {
     & li {
@@ -31,5 +31,11 @@ ul {
 @media (min-width: 640px) {
     footer {
         padding: 0.5em 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer ul {
+        width: 1200px;
     }
 }
