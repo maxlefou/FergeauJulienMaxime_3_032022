@@ -47,6 +47,7 @@ a .dish {
     border-radius: 15px;
     box-shadow: 2px 2px 8px $lightgrey;
     padding: 1em;
+    height: 3em;
     z-index: 1;
     animation: slide_from_right $slidetime ease forwards;
     & h4 {

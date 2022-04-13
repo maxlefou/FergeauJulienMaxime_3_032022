@@ -3,22 +3,22 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vw;
     z-index: 200;
     background-color: $white;
     text-align: center;
     vertical-align: middle;
     animation-name: loader_anim;
-    animation-duration: 1.2s;
+    animation-duration: 10.2s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: running;
     & h1 {
         font-size: 3em;
-        margin: 40% auto 50px auto;
+        margin: 20% auto 50px auto;
         animation-name: loader_anim;
-        animation-duration: 1.2s;
+        animation-duration: 10.2s;
         animation-delay: 1s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -41,7 +41,7 @@
     height: 80px;
     margin: 0 auto;
     animation-name: loader_anim;
-    animation-duration: 1.2s;
+    animation-duration: 10.2s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
