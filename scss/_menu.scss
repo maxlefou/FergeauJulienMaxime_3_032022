@@ -39,6 +39,7 @@
     margin: -12px auto 1.5em 0;
     width: 40px;
     border: 2px solid $menu-underline-color;
+    background-color: $menu-underline-color;
 }
 
 a .dish {
@@ -121,5 +122,17 @@ a .dish {
     }
     .dish {
             width: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    .menu_head_bg img {
+        @include responsive_pic(100vh);
+    }
+    .menu_header {
+        width: 640px;
+        margin-top: -50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
