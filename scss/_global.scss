@@ -9,7 +9,7 @@ main {
 
 a, a:visited {
     text-decoration: none;
-    color: $black;
+    color: $links-text-color;
 }
 
 h1,
@@ -27,20 +27,21 @@ h6 {
 }
 
 .order_btn {
-    background: linear-gradient(347deg, $primary, $secondary);
+    background: $order-btn-bg-color;
     border-radius: 50px;
     border-style: none;
-    box-shadow: 2px 2px 8px $grey;
+    box-shadow: 2px 2px 8px $shadows-color;
     font-weight: 500;
-    color: white;
+    color: $order-btn-text-color;
     padding: 1em 1em;
     margin: 0 auto 2em auto;
     transition: all 200ms ease;
     width: 50%;
+    max-width: 640px;
 
     &:active {
         transform: scale(0.9);
-        box-shadow: 1px 1px 4px $grey;
+        box-shadow: 1px 1px 4px $shadows-color;
     }
 }
 
@@ -50,14 +51,14 @@ h6 {
 }
 
 ::-webkit-scrollbar-track {
-    background: $lightgrey;
+    background: $scrollbar-track-color;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, $primary, $secondary);
+    background: $scrollbar-thumb-color;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $secondary;
+    background: $scrollbar-thumb-hover-color;
 }

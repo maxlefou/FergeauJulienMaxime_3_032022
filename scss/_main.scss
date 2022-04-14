@@ -11,10 +11,10 @@
 
 a .fonct {
     &_button {
-        background-color: $lightergrey;
+        background-color: $fonct-button-bg-color;
         position: relative;
         border-radius: 15px;
-        box-shadow: 2px 2px 8px $grey;
+        box-shadow: 2px 2px 8px $shadows-color;
         width: auto;
         padding: 25px 25px 25px 40px;
         margin-left: 15px;
@@ -23,7 +23,7 @@ a .fonct {
 
         & svg {
             margin: 0px 15px 0 -8px;
-            color: $grey;
+            color: $fonct-icon-color;
         }
 
         &:hover {
@@ -35,10 +35,10 @@ a .fonct {
 
     &_number {
         border: none;
-        background-color: $primary;
+        background-color: $fonct-btn-number-bg-color;
         border-radius: 50px;
         padding: 7px;
-        color: $white;
+        color: $fonct-btn-number-text-color;
         width: 1em;
         text-align: center;
         margin: -24px -20px -5px -56px;
@@ -49,8 +49,8 @@ a .fonct {
         @include anims_base(-1);
         transition: opacity 250ms;
         opacity: 0;
-        background-color: lighten($primary, 25);
-        box-shadow: 2px 2px 8px $grey;
+        background-color: $fonct-button-bg-hover-color;
+        box-shadow: 2px 2px 8px $shadows-color;
         border-radius: 15px;
     }
 
@@ -65,7 +65,7 @@ a .fonct {
 }
 
 #restaurants {
-    background-color: $lightergrey;
+    background-color: $resto-bg-color;
     margin: 0;
     width: auto;
     padding: 1em 1em 3em 1em;
@@ -92,12 +92,12 @@ a .card {
 
 .card {
     display: inline-block;
-    background-color: white;
-    box-shadow: 3px 3px 12px grey;
+    background-color: $resto-card-bg-color;
+    box-shadow: 3px 3px 12px $shadows-color;
     border-radius: 16px;
     padding: 0;
     width: 98%;
-    transition: transform 250ms ease;
+    transition: transform $enlargetime ease;
 
     & .card_img {
         display: block;
@@ -138,8 +138,8 @@ a .card {
     position: absolute;
     top: 1em;
     right: 1em;
-    background-color: $tertiary;
-    color: darken($color: $tertiary, $amount: 50%);
+    background-color: $resto-card-newpill-bg-color;
+    color: $resto-card-newpill-text-color;
     border-radius: 3px;
     text-align: center;
     margin-left: 100%;

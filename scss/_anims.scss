@@ -17,3 +17,25 @@
         transform: translateX(0);
     }
 }
+
+// loader ring
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// loader 
+@keyframes loader_anim {
+    99% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-999999px);
+    }
+}

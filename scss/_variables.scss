@@ -1,18 +1,73 @@
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+// Color palette
+$color-primary:                       #9356DC;
+$color-secondary:                   #FF79DA;
+$color-tertiary:                         #99E2D0;
 
-$black: black;
-$darkgrey: rgb(64, 64, 64);
-$grey: rgb(127, 127, 127);
-$lightgrey: rgb(226, 226, 226);
-$lightergrey: rgb(240, 240, 240);
-$white: white;
+$color-black:                              black;
+$color-darkgrey:                       rgb(64, 64, 64);
+$color-grey:                               rgb(127, 127, 127);
+$color-lightgrey:                       rgb(226, 226, 226);
+$color-lightergrey:                   rgb(240, 240, 240);
+$color-white:                             white;
 
-$lightprimary: #e6d2ff;
+$color-lightprimary:                  #e6d2ff;
 
 $textsize_normal: 1.5em;
 $textsize_small: 1.25em;
 
 $slidetime: 500ms;
 $enlargetime: calc($slidetime / 2);
+
+$loadertime: 1.2s;
+
+/////////////////////////////////////
+
+$shadows-color:                          $color-grey;
+
+$links-text-color:                          $color-black;
+
+$heart-filled-gradient:                 linear-gradient(9deg, $color-secondary, $color-primary); // yep, contrary of $order-btn-bg-color
+
+$loader-bg-color:                          $color-white;
+$loader-ring-color:                       $color-grey transparent $color-grey transparent;
+
+$scrollbar-track-color:                 $color-lightgrey;
+$scrollbar-thumb-color:              linear-gradient(347deg, $color-primary, $color-secondary);
+$scrollbar-thumb-hover-color:   $color-secondary;
+
+$navbar-bg-color:                         $color-white;
+$navbar-shadow-color:               $color-black;
+
+$location-bg-color:                      $color-lightgrey;
+$location-fontsize:                       $textsize_small;
+
+$main-header-color:                   $color-lightergrey;
+$main-header-h4-fontsize:        $textsize_normal;
+$main-header-h5-fontsize:        $textsize_small;
+
+$order-btn-bg-color: $scrollbar-thumb-color;
+$order-btn-text-color: $color-white;
+
+$fonct-button-bg-color:             $main-header-color;
+$fonct-button-bg-hover-color:  lighten($color-primary, 25);
+$fonct-btn-number-bg-color:    $color-primary;
+$fonct-btn-number-text-color:  $color-white;
+$fonct-icon-color:                         $color-grey;
+
+$resto-bg-color:                            $main-header-color;
+
+$resto-card-bg-color:                   $color-white;
+$resto-card-newpill-bg-color:     $color-tertiary;
+$resto-card-newpill-text-color:   darken($resto-card-newpill-bg-color, 50);
+
+$menu-bg-color:                           $main-header-color;
+$menu-underline-color:               $color-tertiary;
+
+$dish-bg-color:                              $fonct-btn-number-text-color;
+$dish-valid-bg-color:                    $menu-underline-color;
+$dish-valid-icon-color:                 $color-white;
+
+$footer-bg-color:                            $color-darkgrey;
+$footer-link-color:                           $color-white !important;
+$footer-link-hover-color:               $scrollbar-track-color !important;
+

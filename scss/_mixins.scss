@@ -1,6 +1,6 @@
+// this one contains the base for the animated elements 
 @mixin anims_base($z-index) {
-    /* Don't forget to put position relative to parent object! */
-    position: absolute;
+    position: absolute; // Don't forget to put position relative to parent object!
     top: 0;
     right: 0;
     bottom: 0;
@@ -8,6 +8,7 @@
     z-index: $z-index;
 }
 
+// this one has the bases for responsive pictures
 @mixin responsive_pic($height) {
     width: 100%;
     height: $height;
@@ -15,8 +16,19 @@
     object-position: center;
 }
 
+// this one hides the text that is overflown, like in the dishes button
 @mixin hide_that_text {
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+// This one defines some default settings for the loader animation
+@mixin loader_anim_base {
+    animation-name: loader_anim;
+    animation-duration: $loadertime;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }

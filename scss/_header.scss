@@ -1,13 +1,13 @@
 .main_header {
-    background-color: $lightergrey;
+    background-color: $main-header-color;
     vertical-align: middle;
     text-align: center;
     & h4 {
-        font-size: $textsize_normal;
+        font-size: $main-header-h4-fontsize;
         padding: 0 1em;
     }
     & h5 {
-        font-size: $textsize_small;
+        font-size: $main-header-h5-fontsize;
         font-weight: 200;
         padding: 0 1em; 
     }
@@ -15,8 +15,8 @@
 
 #location_box {
     height: 64px;
-    background-color: $lightgrey;
-    font-size: $textsize_small;
+    background-color: $location-bg-color;
+    font-size: $location-fontsize;
     font-weight: 500;
     line-height: 64px;
     & svg { /* wtf fontawesome!!! */

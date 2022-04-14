@@ -19,7 +19,7 @@
         &::after{
             font: var(--fa-font-solid);
             content: "\f004";
-            background: linear-gradient(9deg, $secondary, $primary);
+            background: $heart-filled-gradient;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;

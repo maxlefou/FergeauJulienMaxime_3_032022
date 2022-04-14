@@ -1,8 +1,8 @@
 footer {
-    background-color: $darkgrey;
+    background-color: $footer-bg-color;
     padding: 0.5em 1.2em;
     margin: 0;
-    color: $white;
+    color: $footer-link-color;
     line-height: 2em;
 }
 
@@ -17,9 +17,9 @@ ul {
         list-style: none;
         margin-left: -2.5em;
         & a {
-            color: $white !important; /* WHAT THE FUCK */
+            color: $footer-link-color;
             &:hover {
-                color: $lightgrey !important;
+                color: $footer-link-hover-color;
             }
             & svg {
                 width: 20px;
