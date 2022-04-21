@@ -150,7 +150,7 @@ a .card {
 /**
 * DESKTOP AND TABLETS
 */
-@media (min-width: 915px) {
+@media (min-width: 768px) {
     main {
         flex-direction: row-reverse;
         margin: 0 auto;
@@ -170,6 +170,7 @@ a .card {
 
     #restaurants {
         margin: 1em;
+        margin-bottom: 3em;
         border-radius: 15px;
     }
 

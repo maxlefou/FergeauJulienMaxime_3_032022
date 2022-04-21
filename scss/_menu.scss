@@ -1,5 +1,5 @@
 .menu_head_bg {
-    position: sticky;
+    position: fixed;
     top: 66px;
     margin: 0;
     width: 100%;
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px 1em 0 1em;
-    margin: -64px 0 0 0;
+    margin: 250px 0 0 0;
     background-color: $menu-bg-color;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -115,24 +115,25 @@ a .dish {
     }
 }
 
-@media (min-width: 915px) {
-    .menu_section .card_container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .dish {
-            width: auto;
-    }
-}
-
 @media (min-width: 640px) {
     .menu_head_bg img {
         @include responsive_pic(100vh);
     }
     .menu_header {
         width: 640px;
-        margin-top: -50%;
+        margin-top: 400px;
+        margin-bottom: 4em;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 50px;
+    }
+
+    .menu_section .card_container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .dish {
+        width: auto;
     }
 }
