@@ -32,10 +32,10 @@
 // loader 
 @keyframes loader_anim {
     99% {
-        transform: translate(0);
+        display: block;
     }
 
     100% {
-        transform: translate(-999999px);
+        display: none;
     }
 }
