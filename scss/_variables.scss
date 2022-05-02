@@ -18,6 +18,7 @@ $textsize_small: 1.25em;
 $slidetime: 500ms;
 $enlargetime: calc($slidetime / 2);
 
+// Time for displaying loader
 $loadertime: 1.2s;
 
 /////////////////////////////////////
@@ -53,6 +54,7 @@ $fonct-button-bg-hover-color:  lighten($color-primary, 25);
 $fonct-btn-number-bg-color:    $color-primary;
 $fonct-btn-number-text-color:  $color-white;
 $fonct-icon-color:                         $color-grey;
+$fonct-icon-color-hover:             $color-primary;
 
 $resto-bg-color:                            $main-header-color;
 

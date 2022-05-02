@@ -30,6 +30,9 @@ a .fonct {
             & .fonct__bg {
                 opacity: 1;
             }
+            & svg {
+                color: $fonct-icon-color-hover;
+            }
         }
     }
 
