@@ -57,12 +57,13 @@ a .fonct {
         border-radius: 15px;
     }
 
+    // This makes a class with a number for each element so they animate independently
     @for $i from 1 through 3 {
         &--#{$i} {
             animation-name: slide_from_right;
             animation-duration: $slidetime;
             animation-fill-mode: both;
-            animation-delay: 2000ms + $enlargetime * $i;
+            animation-delay: $loadertime + 500ms + $enlargetime * $i; // the math. The 500 miliseconds is for the loader's feedback
         }
     }
 }
