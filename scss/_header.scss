@@ -19,7 +19,7 @@
     font-size: $location-fontsize;
     font-weight: 500;
     line-height: 64px;
-    & svg { /* wtf fontawesome!!! */
+    & svg { // Seems fontawesome now transforms i into svg
         padding-right: 15px;
         margin: auto 0px;
     }

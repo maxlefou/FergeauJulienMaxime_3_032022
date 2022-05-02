@@ -73,7 +73,7 @@ a .dish {
         transform: translateX(0);
         height: auto;
     }
-    &:hover {
+    &:hover { //makes teh validation block and its icon appear
         & .dish__valid {
             animation: validate_menu_item $enlargetime ease-out forwards;
             &::before {
@@ -93,7 +93,7 @@ a .dish {
             width: 50%;
         }
     }
-    &__valid {
+    &__valid { // the valid block with its icon
         position: absolute;
         top: 0;
         right: 0;

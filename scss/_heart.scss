@@ -17,7 +17,7 @@
         transform: scale(0);
         transition: transform $enlargetime ease;
         &::after{
-            font: var(--fa-font-solid);
+            font: var(--fa-font-solid); // This is how fontawesome font is effectively called now.
             content: "\f004";
             background: $heart-filled-gradient;
             -webkit-background-clip: text;
@@ -27,6 +27,7 @@
     }
 }
 
+// Because the icon is the same on menus but not placed at the same spot
 .menu_header .favorite_icon {
     top: -50px;
     right: 1em;

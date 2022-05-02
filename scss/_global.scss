@@ -45,7 +45,11 @@ h6 {
     }
 }
 
-/* Doesn't work on firefox. There's a code for that in Firefox but it doesn't work on the main bar. Or maybe it's Linux again... */
+/** 
+    This gives some style on the scrollbars on desktop.
+    Doesn't work on firefox. There's a code for that in Firefox but it doesn't work on the main bar. 
+    Or maybe it's Linux again... 
+*/
 ::-webkit-scrollbar {
     width: 10px;
 }

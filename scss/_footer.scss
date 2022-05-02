@@ -20,7 +20,7 @@ ul {
                 color: $footer-link-hover-color;
             }
             & svg {
-                width: 20px;
+                width: 20px; // So the text behind icons keep alignment
             }
         }
     }

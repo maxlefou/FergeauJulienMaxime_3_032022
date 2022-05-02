@@ -12,10 +12,14 @@ $color-white:                             white;
 
 $color-lightprimary:                  #e6d2ff;
 
+// Font sizes
 $textsize_normal: 1.5em;
 $textsize_small: 1.25em;
 
+// The time it takes for a list item to slide
 $slidetime: 500ms;
+
+// The time it takes for the validation block on menus to appear
 $enlargetime: calc($slidetime / 2);
 
 // Time for displaying loader
