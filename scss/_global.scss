@@ -26,25 +26,6 @@ h6 {
     font-size: 1.5em;
 }
 
-.order_btn {
-    background: $order-btn-bg-color;
-    border-radius: 50px;
-    border-style: none;
-    box-shadow: 2px 2px 8px $shadows-color;
-    font-weight: 500;
-    color: $order-btn-text-color;
-    padding: 1em 1em;
-    margin: 0 auto 2em auto;
-    transition: all 200ms ease;
-    width: 50%;
-    max-width: 640px;
-
-    &:active {
-        transform: scale(0.9);
-        box-shadow: 1px 1px 4px $shadows-color;
-    }
-}
-
 /** 
     This gives some style on the scrollbars on desktop.
     Doesn't work on firefox. There's a code for that in Firefox but it doesn't work on the main bar. 
