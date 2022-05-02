@@ -30,12 +30,24 @@
 }
 
 // loader 
-@keyframes loader_anim {
+/* @keyframes loader_anim {
     99% {
         display: block;
     }
 
     100% {
         display: none;
+    }
+} */
+
+// Apparently, display can't work in animations (don't ask me why it worked at some point)
+// so we use a huge translate to hide it.
+@keyframes loader_anim {
+    99% {
+        transform: none;
+    }
+
+    100% {
+        transform: translate(-999999px);
     }
 }
