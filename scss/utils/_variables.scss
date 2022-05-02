@@ -9,7 +9,7 @@ $color-grey:                               rgb(127, 127, 127);
 $color-lightgrey:                       rgb(226, 226, 226);
 $color-lightergrey:                   rgb(240, 240, 240);
 $color-white:                             white;
-
+$color-transparent:                 rgba(255, 255, 255, 0);
 $color-lightprimary:                  #e6d2ff;
 
 // Font sizes
@@ -50,8 +50,11 @@ $main-header-color:                   $color-lightergrey;
 $main-header-h4-fontsize:        $textsize_normal;
 $main-header-h5-fontsize:        $textsize_small;
 
-$order-btn-bg-color: $scrollbar-thumb-color;
-$order-btn-text-color: $color-white;
+$order-btn-bg-color:                    linear-gradient(347deg, $color-primary, $color-transparent);
+$order-btn-bg-color-hover:        linear-gradient(347deg, lighten($color-primary, 10), $color-transparent);
+$order-btn-bg-color-hack:          $color-secondary;
+$order-btn-bg-color-hack-hover: lighten($color-secondary, 10);
+$order-btn-text-color:                  $color-white;
 
 $fonct-button-bg-color:             $main-header-color;
 $fonct-button-bg-hover-color:  lighten($color-primary, 25);

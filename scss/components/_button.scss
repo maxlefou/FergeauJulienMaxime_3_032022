@@ -1,5 +1,6 @@
 .order_btn {
-    background: $order-btn-bg-color;
+    background-image: $order-btn-bg-color;
+    background-color: $order-btn-bg-color-hack;
     border-radius: 50px;
     border-style: none;
     box-shadow: 2px 2px 8px $shadows-color;
@@ -12,7 +13,9 @@
     max-width: 640px;
 
     &:active {
-        transform: scale(0.9);
+        background-image: $order-btn-bg-color-hover;
+        background-color: $order-btn-bg-color-hack-hover;
+        transform: scale(0.98);
         box-shadow: 1px 1px 4px $shadows-color;
     }
 }
