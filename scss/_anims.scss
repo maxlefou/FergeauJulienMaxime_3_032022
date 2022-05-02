@@ -31,13 +31,13 @@
 
 // loader 
 // Apparently, display can't work in animations (don't ask me why it worked at some point)
-// so we use a huge translate to hide it.
+// so we use a modern css approach.
 @keyframes loader_anim {
     99% {
-        transform: none;
+        visibility:visible;
     }
 
     100% {
-        transform: translate(-999999px);
+        visibility:hidden;
     }
 }
